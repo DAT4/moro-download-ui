@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }} {{v}}</h1>
     <h3>Download</h3>
-    <a href="https://moro.mama.sh/api/download">
+    <a href="https://api.moro.mama.sh/other/download">
       <img alt="Download" height="80" src="../assets/dl.png" />
     </a>
       <h3>Release noter til version {{ v }}:</h3>
@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     getLatest: function () {
-      fetch("https://moro.mama.sh/api/version", {
+      fetch("https://api.moro.mama.sh/other/version", {
         method: "GET",
         headers: { Accept: "application/json" },
       })
